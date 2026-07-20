@@ -1,0 +1,563 @@
+@import url(global.css);
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  background: var(--nav-bg-color);
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header img {
+  max-width: 20%;
+}
+
+.botoes-ass {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.botao-1 {
+  border-radius: 125px;
+  font-size: 60%;
+  padding: 7px 12px;
+  border-style: none;
+  background-color: transparent;
+  color: #ffff;
+}
+
+.botao-2 {
+  border-radius: 125px;
+  font-size: 60%;
+  padding: 7px 12px;
+  border-style: none;
+  background-color: #b535f6;
+  transition: linear 0.4s;
+  color: #ffff;
+}
+
+.botao-2:hover {
+  background-color: #ffff;
+  color: black;
+}
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(10deg, #35014f, #040450, #7a0270);
+  background-size: 300% 300%;
+  animation: Roxo 10s ease infinite alternate;
+}
+
+@keyframes Roxo {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 70% 90%;
+  }
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  gap: 30px;
+}
+
+.linha-fade {
+  width: 70%;
+  max-width: 700px;
+  height: 4px;
+  border-style: none;
+  background: var(--divider-bg-color);
+  margin-top: 5%;
+}
+
+.preco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20%;
+}
+
+.header__channels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 300px;
+  position: relative;
+  width: 100%;
+  gap: 12px;
+}
+
+.curta {
+  margin-top: 5%;
+  gap: 12px;
+}
+
+.curta h4 {
+  font-size: 200%;
+}
+
+.curta h2 {
+  text-align: center;
+  font-size: 240%;
+}
+
+.danca-botao {
+  padding: 16px 40px;
+  background: linear-gradient(50deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 100%);
+  border-radius: 500px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  cursor: pointer;
+  animation: danca 3s linear infinite;
+}
+
+.danca-botao:hover {
+  background: transparent;
+  transition: 0.3s;
+  border-color: #ff00e5;
+}
+
+@keyframes danca {
+
+  0%,
+  10% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  35% {
+    transform: rotate(10deg);
+  }
+
+  40%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.ass-mes {
+  font-size: 120%;
+}
+
+.divider {
+  height: 100px;
+  background: linear-gradient(to bottom,
+      #08004f 10%,
+      #0b0048 30%,
+      #0d0038 70%,
+      #02002e 100%,
+      #00001a 100%);
+}
+
+.textoS2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 5%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 1%;
+  width: 90%;
+  background: var(--card-bg-color);
+}
+
+.card-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  gap: 30%;
+  margin-bottom: 5%;
+}
+
+.subscription-price {
+  font-size: 1.75rem;
+  font-family: Raleway, sans-serif;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.text--small {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.card-texto-1 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 130%;
+}
+
+.cards li {
+  list-style: none;
+  padding-left: 3%;
+}
+
+li::marker {
+  content: "+";
+  font-size: 2rem;
+}
+
+.botao-1 {
+  align-self: end;
+}
+
+.button-first {
+  margin: 80px auto;
+  display: flex;
+  justify-content: end;
+  border: none;
+  border-radius: 350px;
+  padding: 16px 40px;
+  background: linear-gradient(50deg, #b535f6, #040450, transparent 70%);
+  background-size: 400% 400%;
+  color: #FFFFFFFF;
+  letter-spacing: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 1s, outline 1s, transform 1s;
+  background-size: 250%;
+  align-self: flex-end;
+}
+
+.button-first:hover {
+  background: transparent;
+  transition: 0.3s;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+  transition: background 1s, outline 1s, transform 1s;
+}
+
+@media screen and (min-width: 850px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    gap: 40px;
+  }
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 1%;
+  width: 90%;
+  background: var(--card-bg-color);
+}
+
+.card-multitelas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  gap: 30%;
+  margin-bottom: 5%;
+}
+
+.card-texto-2 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 130%;
+}
+
+.button-2 {
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 350px;
+  padding: 16px 40px;
+  background: linear-gradient(50deg, #b535f6, #040450, transparent 70%);
+  background-size: 400% 400%;
+  color: #FFFFFFFF;
+  letter-spacing: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 1s, outline 1s, transform 1s;
+  background-size: 250%;
+}
+
+.button-2:hover {
+  background: transparent;
+  transition: 0.3s;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+  transition: background 1s, outline 1s, transform 1s;
+}
+
+.filme-serie {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 15px;
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 4px;
+}
+
+.all {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card-filme {
+  width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  transition: .6s ease-in;
+  padding: 8% 4%;
+}
+
+.filme-1 {
+  background-image: url(../images/hbo-default_0.webp);
+}
+
+.filme-1:hover {
+  cursor: pointer;
+  background-image: url(../images/hbo-hover_0.webp);
+}
+
+.filme-2 {
+  background-image: url(../images/MAX-Default.webp);
+}
+
+.filme-2:hover {
+  cursor: pointer;
+  background-image: url(../images/MAX-Hover.webp);
+}
+
+.filme-3 {
+  background-image: url(../images/DC_Default.webp);
+}
+
+.filme-3:hover {
+  cursor: pointer;
+  background-image: url(../images/DC-Hover.webp);
+}
+
+.filme-4 {
+  background-image: url(../images/WB-Default.webp);
+}
+
+.filme-4:hover {
+  cursor: pointer;
+  background-image: url(../images/WB-Hover.webp);
+}
+
+.filme-5 {
+  background-image: url(../images/CN-Default.webp);
+}
+
+.filme-5:hover {
+  cursor: pointer;
+  background-image: url(../images/CN-Hover.png);
+}
+
+.filme-6 {
+  background-image: url(../images/UCL-Default.webp);
+}
+
+.filme-6:hover {
+  cursor: pointer;
+  background-image: url(../images/UCL-Hover.webp);
+}
+
+.footer-container {
+  max-width: 100%;
+  height: 250px;
+  margin: auto;
+  padding: 24px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7%;
+  padding: 2%;
+  letter-spacing: 2px;
+}
+
+.link a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--link-color);
+}
+
+.text-small {
+  margin-top: 3%;
+  font-size: 0.75rem;
+  color: var(--link-color);
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  gap: 10%;
+}
+
+
+@media  screen and (min-width: 1000px) {
+
+header img {
+max-width: 10%;
+}
+
+.section-2 {
+  background: url(../images/background-movies-series.png);
+   background-size: cover;
+    background-position: center top;
+}
+
+.cards:has(.card-1:hover) .card-2{
+    transform: rotateY(30deg);
+    transition: transform 0.8s;
+}
+
+.cards:has(.card-2:hover) .card-1{ 
+  transform: rotateY(30deg);
+    transition: transform 0.8s;
+}
+
+ .all {
+margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+ } 
+
+ .card-filme {
+  width: 350px;
+  height: 450px;
+     overflow-clip-margin: content-box;
+    overflow: clip;
+ }
+
+ .link {
+gap: 1%;
+ }
+
+.footer-container {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-top: -2%;
+}
+
+.juntos {
+  justify-content: center;
+}
+
+.text-small {
+  margin-top: -8%;
+}
+
+.social-media {
+  margin-top: 3%;
+  gap: 5%;
+}
+}
